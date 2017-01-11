@@ -73,15 +73,19 @@ Maybe #if hasNext == true?
 
 <div class="row">
   <div class="next-previous-links">
-  <div class="previous-page-link">
-    <span class="subtitle">PREVIOUS</span>
-    <a href="#">Installation</a>
+    {{#if previous}}
+    <div class="previous-page-link">
+      <span class="subtitle">PREVIOUS</span>
+      <a href="{{previous.url}}">{{previous.title}}</a>
+    </div>
+    {{/if}}
+    {{#if next}}
+    <div class="next-page-link">
+      <span class="subtitle">NEXT</span>
+      <a href="{{next.url}}">{{next.title}}</a>
+    </div>
+    {{/if}}
   </div>
-  <div class="next-page-link">
-    <span class="subtitle">NEXT</span>
-    <a href="#">Buttons</a>
-  </div>
-</div>
 <!-- END Next/Previous page links -->
 </div>
 {{#if relatedFiles}}
