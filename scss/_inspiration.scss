@@ -7,13 +7,12 @@
 
   p {
     display: block;
-    height: 80px;
-    max-height:80px;
     margin: 0 auto;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: rem-calc(15px);
+    margin-bottom: rem-calc(15);
     color: $dark-gray;
+    max-width: 183px;
   }
 
 }
@@ -31,6 +30,7 @@
 }
 
 .section-inspiration img {
-  height: 100%;
+  max-height: 260px;
   width: 100%;
+  overflow: hidden;
 }
