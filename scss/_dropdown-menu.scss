@@ -12,7 +12,8 @@ $docs-dropdown-border-radius: 3px;
       color: $docs-scaled-color-10;
       margin-right: 10px;
       line-height: 1.5;
-      font-size: rem-calc(14px);
+      font-size: rem-calc(14);
+      white-space: nowrap;
     }
 
     // Dropdown arrow
@@ -29,7 +30,7 @@ $docs-dropdown-border-radius: 3px;
     // Menu items
     li.is-submenu-item.is-dropdown-submenu-item {
       background: $docs-scaled-color-1;
-      font-size: rem-calc(14px);
+      font-size: rem-calc(14);
       width: auto;
       border-bottom: 1px solid $docs-scaled-color-3;
 

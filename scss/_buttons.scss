@@ -19,6 +19,7 @@
   color: $docs-scaled-color-8;
   border: 1px solid $docs-scaled-color-4;
   border-radius: 3px;
+  transition: all 0.2s ease-in;
 
   &:hover {
     color: $docs-scaled-color-10;
@@ -32,20 +33,17 @@
 }
 
 .icon-buttons-docs {
-
-  li {
-    list-style: none;
+  .column {
     text-align: left;
-    margin-bottom: rem-calc(15px);
 
     @include breakpoint(medium up) {
       text-align: center;
     }
   }
 
-  li a {
+  a {
     @extend .button-docs.secondary;
-    padding: rem-calc(10px 15px);
+    padding: rem-calc(10) 0;
     color: $docs-scaled-color-10;
     display: block;
     line-height: 1.2;
