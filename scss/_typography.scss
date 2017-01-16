@@ -79,6 +79,10 @@ h1.docs-heading {
 }
 h2.docs-heading {
   font-weight: 300;
+
+  &.main {
+    font-weight: normal;
+  }
 }
 h3.docs-heading {}
 h4.docs-heading {}
