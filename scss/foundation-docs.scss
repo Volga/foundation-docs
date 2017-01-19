@@ -94,3 +94,58 @@
 //     &.alert   { border-left-color: $alert-color; }
 //   }
 // }
+
+.thumb-row {
+  a {
+    display: block;
+    text-align: center;
+  }
+
+  a .thumb-category {
+    color: $medium-gray;
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  a .thumb-description {
+    color: $body-font-color;
+    font-size: 1.0625rem;
+    font-weight: 300;
+    text-shadow: 0 0 1px rgba(0,0,0,0.3);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    .thumb-author {
+      font-size: 0.75rem;
+      display: block;
+    }
+  }
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  img.tuts-img {
+    width: 278px;
+    height: 157px;
+    display: block;
+    margin: 0 auto 2rem;
+  }
+
+  .column {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: $light-gray;
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+
