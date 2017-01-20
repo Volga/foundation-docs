@@ -1,12 +1,14 @@
 .docs-video {
   user-select: none;
+  margin-bottom: 1rem;
+  max-width: 320px;
 }
 
 .docs-video-trigger {
   @extend .button-docs.secondary;
   display: inline-block;
   position: relative;
-  padding: rem-calc(5px 15px);
+  padding: rem-calc(5 15);
   font-size: 85%;
 
   &:hover {
@@ -18,7 +20,7 @@
   display: none;
 }
 
-// Move the video for tables and phones
+// Move the video for tablets and phones
 @include breakpoint(medium down) {
   .docs-video-container.is-Open {
     display: block;
