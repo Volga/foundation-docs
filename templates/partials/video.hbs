@@ -12,13 +12,13 @@
   </div>
 
   <!-- When video button is clicked: -->
-  <div class="docs-video-container" data-closable>
+  <div class="docs-video-container" data-toggler=".is-Open">
     <div class="docs-video-expanded">
       <div data-sticky-container>
         <div class="docs-video-inner" data-sticky data-anchor="docs" data-sticky-on="large">
-          <span data-close><img src="assets/icons/delete.svg" alt=""></span>
+          <span class="video-close" data-toggle><img src="assets/icons/delete.svg" alt=""></span>
           <div class="video-container">
-            <div class="flex-video widescreen">
+            <div class="responsive-embed widescreen">
               <iframe width="560" height="315" src="{{video.url}}" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>

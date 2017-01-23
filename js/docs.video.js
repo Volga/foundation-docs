@@ -1,5 +1,7 @@
 $('.docs-video-trigger').click(function() {
-  $(this).next('.docs-video-container').toggleClass('is-Open');
-  $(this).next('.docs-video-container').foundation('destroy');
-  $(this).next('.docs-video-container').remove();
+  var container = $(this).next('.docs-video-container');
+  container.toggleClass('is-Open');
+  var embed = container.find('.responsive-embed');
+  var iframe = embed.find('iframe');
+  iframe.detach().appendTo(embed);
 });
