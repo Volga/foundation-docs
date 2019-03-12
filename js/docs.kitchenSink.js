@@ -12,7 +12,7 @@ $ks.find('[data-ks-codepen]').each(function() {
   var $codepen = $(this);
   var $code = $codepen.next('[data-docs-code]');
 
-  $link = $('<a class="docs-code-toggle">Toggle Code</a>');
+  $link = $('<a class="docs-code-toggle">Переключиться на Код</a>');
   $link.on('click.docs', function() {
     $codepen.slideToggle(250);
     $code.slideToggle(250);

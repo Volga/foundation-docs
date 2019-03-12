@@ -7,7 +7,7 @@
 // Look for code samples and set up a copy button on each
 $('[data-docs-code]').each(function(index, value) {
   var copyBtnId = 'copy-btn-' + index.toString();
-  var $button = $('<button class="docs-code-copy" id="' + copyBtnId + '">Copy</button>');
+  var $button = $('<button class="docs-code-copy" id="' + copyBtnId + '">Копировать</button>');
 
   var text = $(this).find('code').text()
     .replace('&lt;', '<')
@@ -23,9 +23,9 @@ $('[data-docs-code]').each(function(index, value) {
 
   // Change the text of the copy button when it's clicked on
   clipboard.on('success', function(event) {
-    $button.text('Copied!');
+    $button.text('Скопировано!');
     window.setTimeout(function() {
-      $button.text('Copy');
+      $button.text('Копировать');
     }, 3000);
   });
 
