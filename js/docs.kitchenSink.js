@@ -5,14 +5,14 @@
 
 !function() {
 
-var $ks = $('#docs-kitchen-sink');
+var $ks = $('#docs-elementi');
 if (!$ks.length) return;
 
 $ks.find('[data-ks-codepen]').each(function() {
   var $codepen = $(this);
   var $code = $codepen.next('[data-docs-code]');
 
-  $link = $('<a class="docs-code-toggle">Переключиться на Код</a>');
+  $link = $('<a class="docs-code-toggle">Смотреть Код</a>');
   $link.on('click.docs', function() {
     $codepen.slideToggle(250);
     $code.slideToggle(250);
