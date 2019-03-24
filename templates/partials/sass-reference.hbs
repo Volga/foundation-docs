@@ -1,15 +1,15 @@
 <section>
-  {{#heading 2}}Sass Reference{{/heading}}
+  {{#heading 2}}Sass{{/heading}}
 
   {{#if (hasContent sass.variable)}}
   <section>
-    {{#heading 3 'sass-variables'}}Variables{{/heading}}
+    {{#heading 3 'sass-variables'}}Переменные{{/heading}}
 
-    <p>The default styles of this component can be customized using these Sass variables in your project's <a href="sass.html#the-settings-file">settings file</a>.</p>
+    <p>Стили "по умолчанию", определенные в этом компоненте могут быть переопределены через переменные Sass в <a href="sass.html#the-settings-file">файле настроек</a> вашего проекта.</p>
 
     <table class="docs-variable-table">
       <thead>
-        <tr><th>Name</th><th>Type</th><th>Default Value</th><th>Description</th></tr>
+        <tr><th>Имя</th><th>Тип</th><th>Значение по умолчанию</th><th>Описание</th></tr>
       </thead>
       {{#each sass.variable}}
       <tr>
@@ -27,20 +27,20 @@
   {{#if sass.variable}}<hr>{{/if}}
 
   <section>
-    {{#heading 3 'sass-mixins'}}Mixins{{/heading}}
+    {{#heading 3 'sass-mixins'}}Миксины{{/heading}}
 
-    <p>We use these mixins to build the final CSS output of this component. You can use the mixins yourself to build your own class structure out of our components.</p>
+    <p>Этот компонент использует следующие миксины для формирования окончательного CSS. Вы можете использовать данные миксины для построения собственной структуры классов на встроенных компонентах.</p>
 
     {{#each sass.mixin}}{{#filter this}}
     <section {{#if this.deprecated }}class="docs-deprecated"{{/if}}>
       {{#heading 4}}{{this.context.name}}{{/heading}}
 
       {{#if this.since}}
-        <p class="docs-notice-added">Added in {{this.since.0.version}}</p>
+        <p class="docs-notice-added">Добавлено в {{this.since.0.version}}</p>
       {{/if}}
 
       {{#if this.deprecated}}
-        <p class="docs-notice-deprecated">Deprecated in {{this.deprecated}}</p>
+        <p class="docs-notice-deprecated">Нерекомендуемая в {{this.deprecated}}</p>
       {{/if}}
 
       <div class="docs-code">
@@ -50,7 +50,7 @@
       {{md this.description}}
 
       {{#if this.aliased}}
-        <p><strong>Aliases:</strong> {{#each this.aliased}}<code>{{this}}()</code>{{/each}}</p>
+        <p><strong>Альясы:</strong> {{#each this.aliased}}<code>{{this}}()</code>{{/each}}</p>
       {{/if}}
 
       {{writeSassLink this.link}}
@@ -58,7 +58,7 @@
       {{#if this.parameter}}
       <table class="docs-variable-table">
         <thead>
-          <tr><th>Parameter</th><th>Type</th><th>Default Value</th><th>Description</th></tr>
+          <tr><th>Параметр</th><th>Тип</th><th>Значение по умолчанию</th><th>Описание</th></tr>
         </thead>
         {{#each this.parameter}}
         <tr>
@@ -86,18 +86,18 @@
   <hr>
 
   <section>
-    {{#heading 3 'sass-functions'}}Functions{{/heading}}
+    {{#heading 3 'sass-functions'}}Функции{{/heading}}
 
     {{#each sass.function}}{{#filter this}}
     <section {{#if this.deprecated }}class="docs-deprecated"{{/if}}>
       {{#heading 4}}{{this.context.name}}{{/heading}}
 
       {{#if this.since}}
-        <p class="docs-notice-added">Added in {{this.since.0.version}}</p>
+        <p class="docs-notice-added">Добавлено в {{this.since.0.version}}</p>
       {{/if}}
 
       {{#if this.deprecated}}
-        <p class="docs-notice-deprecated">Deprecated in {{this.deprecated.version}}</p>
+        <p class="docs-notice-deprecated">Нерекомендуется в {{this.deprecated.version}}</p>
       {{/if}}
 
       <div class="docs-code">
@@ -111,7 +111,7 @@
       {{#if this.parameter}}
       <table class="docs-variable-table">
         <thead>
-          <tr><th>Parameter</th><th>Type</th><th>Default Value</th><th>Description</th></tr>
+          <tr><th>Параметр</th><th>Тип</th><th>Значение по умолчанию</th><th>Описание</th></tr>
         </thead>
         {{#each this.parameter}}
         <tr>
